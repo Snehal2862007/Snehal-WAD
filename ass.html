@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clickable Image Links</title>
+</head>
+<body>
+
+<h2>Click Laptop or Coffee</h2>
+
+<!-- Image -->
+<img src="laptop.jpg" 
+     usemap="#workmap" 
+     width="600" 
+     height="400" 
+     alt="Laptop and Coffee">
+
+<!-- Image Map -->
+<map name="workmap">
+
+    <!-- Laptop Area -->
+    <area shape="rect"
+          coords="50,80,300,280"
+          href="https://leetcode.com"
+          target="_blank"
+          alt="LeetCode">
+
+    <!-- Coffee Area -->
+    <area shape="circle"
+          coords="450,28,50"
+          href="https://www.canva.com"
+          target="_blank"
+          alt="Canva">
+
+</map>
+
+</body>
+</html>
