@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Timetable - CSE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="timetable-container">
+        <div class="header">
+            <h2>D. Y. Patil College of Engineering & Technology, Kolhapur</h2>
+            <h3>Department of Computer Science & Engineering</h3>
+            <h3>Time Table 2025-2026 (SEM-II)</h3>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Day & Time</th>
+                    <th>9.00 to 10.00</th>
+                    <th>10.00 to 11.00</th>
+                    <th class="break-cell">B</th>
+                    <th>11.15 to 12.15</th>
+                    <th>12.15 to 1.15</th>
+                    <th class="break-cell">B</th>
+                    <th>2.00 to 3.00</th>
+                    <th>3.00 to 4.00</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Monday -->
+                <tr>
+                    <td class="day-cell">Monday</td>
+                    <td colspan="2" class="subject-info">
+                        S1-DS(L) AMP-Lab G105<br>
+                        S2-AOOC(PV)-PVK-Lab G207<br>
+                        S3-TMPS(PRP)-PRP-Lab G406<br>
+                        S4-WD(PSK)-SKR-Lab G106<br>
+                        S5-TTL(P)-VD-Lab G205<br>
+                        S6-TTL(P)-VD-Lab G205
+                    </td>
+                    <td rowspan="6" class="break-cell">R<br>E<br>A<br>K</td>
+                    <td><span class="lecture-info">AOOC(L)</span><span class="teacher-info">PVK</span></td>
+                    <td><span class="lecture-info">MDM-II(L)</span><span class="teacher-info">NAH</span></td>
+                    <td rowspan="6" class="break-cell">R<br>E<br>A<br>K</td>
+                    <td><span class="lecture-info">DSL(L)</span><span class="teacher-info">AMP</span></td>
+                    <td>-</td>
+                </tr>
+                <!-- Tuesday -->
+                <tr>
+                    <td class="day-cell">Tuesday</td>
+                    <td colspan="2" class="subject-info">
+                        S1-TTI(PV)-PVK-Lab G207<br>
+                        S2-DSL(PRP)-PRP-Lab G406<br>
+                        S3-AOOC(PSK)-SKR-Lab G106<br>
+                        S4-TTL(PR)-VD-Lab G101<br>
+                        S5-DSL(L)-AMP-Lab G105
+                    </td>
+                    <td><span class="lecture-info">ATL(L)</span><span class="teacher-info">KAB</span></td>
+                    <td><span class="lecture-info">DSL(L)</span><span class="teacher-info">AMP</span></td>
+                    <td><span class="lecture-info">WD(L)</span><span class="teacher-info">SSKore</span></td>
+                    <td><span class="lecture-info">ENV(L)</span></td>
+                </tr>
+                <!-- Wednesday -->
+                <tr>
+                    <td class="day-cell">Wednesday</td>
+                    <td colspan="2" class="subject-info">
+                        S1-AOOC(PV)-PVK-Lab G207<br>
+                        S2-TMPS(PRP)-PRP-Lab G406<br>
+                        S3-WD(PSK)-SKR-Lab G106<br>
+                        S4-TTL(PR)-VD-Lab G101<br>
+                        S5-DSL(L)-AMP-Lab G105
+                    </td>
+                    <td><span class="lecture-info">AOOC(L)</span><span class="teacher-info">PVK</span></td>
+                    <td><span class="lecture-info">MDM-II(L)</span><span class="teacher-info">NAH</span></td>
+                    <td><span class="lecture-info">DSL(L)</span><span class="teacher-info">AMP</span></td>
+                    <td><span class="lecture-info">ENV(L)</span></td>
+                </tr>
+                <!-- Thursday -->
+                <tr>
+                    <td class="day-cell">Thursday</td>
+                    <td colspan="2" class="subject-info">
+                        S1-AOOC(PV)-PVK-Lab G207<br>
+                        S2-TMPS(PRP)-PRP-Lab G406<br>
+                        S3-WD(PSK)-SKR-Lab G106<br>
+                        S4-TTL(PR)-VD-Lab G101<br>
+                        S5-DSL(L)-AMP-Lab G105
+                    </td>
+                    <td><span class="lecture-info">ATL(L)</span><span class="teacher-info">KAB</span></td>
+                    <td><span class="lecture-info">ATL(L)</span><span class="teacher-info">KAB</span></td>
+                    <td>-</td>
+                    <td><span class="lecture-info">OEC-II(L)</span></td>
+                </tr>
+                <!-- Friday -->
+                <tr>
+                    <td class="day-cell">Friday</td>
+                    <td colspan="2" class="subject-info">
+                        S1-AOOC(PV)-PVK-Lab G207<br>
+                        S2-TMPS(PRP)-PRP-Lab G406<br>
+                        S3-WD(PSK)-SKR-Lab G106<br>
+                        S4-TTL(PR)-VD-Lab G101<br>
+                        S5-DSL(L)-AMP-Lab G105
+                    </td>
+                    <td colspan="2" class="subject-info">
+                        S1-AOOC(PV)-PVK-Lab G207<br>
+                        S2-TMPS(PRP)-PRP-Lab G406<br>
+                        S3-WD(PSK)-SKR-Lab G106<br>
+                        S4-TTL(PR)-VD-Lab G101<br>
+                        S5-DSL(L)-AMP-Lab G105
+                    </td>
+                    <td><span class="lecture-info">TMPS(L)</span><span class="teacher-info">PRP</span></td>
+                    <td><span class="lecture-info">OEC-II(L)</span></td>
+                </tr>
+                <!-- Saturday -->
+                <tr>
+                    <td class="day-cell">Saturday</td>
+                    <td colspan="2">LLC-PRP</td>
+                    <td colspan="2">LLC-PRP</td>
+                    <td colspan="2">-</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

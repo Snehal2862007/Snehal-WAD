@@ -1,0 +1,159 @@
+<!-- Snehal Ranjeet Dalavi | Roll No: 10 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4 - Attractive CSS Lists</title>
+    <style>
+        :root {
+            --primary: #8b5cf6;
+            --secondary: #d8b4fe;
+            --bg: #f5f3ff;
+            --card-bg: #ffffff;
+            --text: #4c1d95;
+            --accent: #ede9fe;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 2rem;
+            color: var(--primary);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(139, 92, 246, 0.1);
+            border: 1px solid var(--accent);
+        }
+
+        h2 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 5px solid var(--primary);
+            padding-left: 15px;
+        }
+
+        ul, ol {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            padding: 5px 0;
+            transition: transform 0.2s;
+        }
+
+        li:hover {
+            transform: translateX(10px);
+            color: var(--primary);
+        }
+
+        .nested-card {
+            background: var(--bg);
+            padding: 1rem;
+            border-radius: 12px;
+            margin: 10px 0;
+        }
+
+        .nested-card ol {
+            margin-top: 10px;
+            background: var(--card-bg);
+            padding: 10px 10px 10px 40px;
+            border-radius: 8px;
+        }
+
+        .nested-card > li {
+            font-weight: 800;
+            list-style: none;
+            color: var(--primary);
+            font-size: 1.1rem;
+            border-bottom: 1px solid var(--accent);
+            padding-bottom: 5px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div style="background: #8b5cf6; color: white; padding: 10px; text-align: center; font-family: sans-serif; font-size: 0.9rem;">
+        Name: Snehal Ranjeet Dalavi | Roll No: 10
+    </div>
+    <div class="container">
+        <h1>Smart Lists Hub</h1>
+
+        <section>
+            <h2>Unordered List (Fruits)</h2>
+            <ul>
+                <li>🍎 Apple</li>
+                <li>🍌 Banana</li>
+                <li>🥭 Mango</li>
+                <li>🍊 Orange</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Daily Routine (Roman)</h2>
+            <ol type="I">
+                <li>Wake Up</li>
+                <li>Exercise</li>
+                <li>Breakfast</li>
+                <li>Study</li>
+                <li>Sleep</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Nested Subject Catalog</h2>
+            <ul class="nested-card">
+                <li>Science
+                    <ol type="A">
+                        <li>Programming</li>
+                        <li>Data Structures</li>
+                        <li>Web Development</li>
+                    </ol>
+                </li>
+            </ul>
+            <ul class="nested-card">
+                <li>Commerce
+                    <ol type="i">
+                        <li>Accounting</li>
+                        <li>Economics</li>
+                        <li>Business Studies</li>
+                    </ol>
+                </li>
+            </ul>
+            <ul class="nested-card">
+                <li>Arts
+                    <ol type="a">
+                        <li>History</li>
+                        <li>Geography</li>
+                        <li>Political Science</li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

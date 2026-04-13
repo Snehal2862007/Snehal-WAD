@@ -1,0 +1,141 @@
+<!-- Snehal Ranjeet Dalavi | Roll No: 10 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 - Attractive CSS</title>
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --secondary: #6366f1;
+            --bg: #f3f4f6;
+            --text: #1f2937;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--bg);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        form ol {
+            list-style: none;
+            padding: 0;
+        }
+
+        form li {
+            margin-bottom: 1rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background-color: var(--secondary);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #6b7280;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+    <div style="background: #4f46e5; color: white; padding: 10px; text-align: center; font-family: sans-serif; font-size: 0.9rem;">
+        Name: Snehal Ranjeet Dalavi | Roll No: 10
+    </div>
+    <header>
+        <h1>Modern My Website</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>This is a simple functional website using HTML, CSS and JavaScript. Experience the power of modern web design!</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We build beginner-friendly websites that are both functional and beautiful. Our mission is to make the web accessible to everyone.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <ol>
+                <li><input type="text" placeholder="Your Name" required></li>
+                <li><input type="email" placeholder="Your Email" required></li>
+                <li><textarea rows="4" placeholder="Your Message" required></textarea></li>
+                <li><button type="submit">Send Message</button></li>
+            </ol>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 My Website Hub. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
